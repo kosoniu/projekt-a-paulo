@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/*
+Theme Name: Projekt a'Paulo
+Author: Karol Kosoń
+Description: Motyw dla strony 'Projektu a'Paulo'
+*/
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: black;
+  margin: 0;
+  overflow: hidden; }
+  body .container {
+    max-width: 1440px;
+    width: 100%;
+    height: calc(100vh - 132px);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0; }
+
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: white;
+  left: 0;
+  opacity: 0;
+  transition: 0.7s ease all;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; }
+  .menu ul {
+    padding: 0;
+    list-style: none; }
+    .menu ul img {
+      width: 100%;
+      position: relative;
+      z-index: 1000; }
+    .menu ul li {
+      text-align: center;
+      padding: 10px 0; }
+      .menu ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        text-transform: uppercase; }
+
+.active-menu {
+  opacity: 1;
+  display: flex;
+  pointer-events: all; }
+
+.hamburger {
+  position: absolute;
+  z-index: 10002;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 0 !important; }
+  .hamburger:hover {
+    opacity: 1 !important; }
+  .hamburger.is-active .hamburger-inner {
+    background-color: black; }
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: black; }
+    .hamburger.is-active .hamburger-inner::before {
+      background-color: black; }
+  .hamburger .hamburger-inner {
+    background-color: black !important; }
+    .hamburger .hamburger-inner::after {
+      background-color: black !important; }
+    .hamburger .hamburger-inner::before {
+      background-color: black !important; }
+
+section.default {
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center; }
+  section.default h2 {
+    position: absolute;
+    width: 100%;
+    top: 5vh;
+    text-align: center;
+    margin: 0; }
+    section.default h2 img {
+      width: 150px; }
+  section.default .page_wrapper_inner {
+    display: flex;
+    min-height: 70vh;
+    max-height: 75vh;
+    overflow: hidden; }
+    @media (min-width: 1440px) {
+      section.default .page_wrapper_inner {
+        min-height: 70vh;
+        max-height: 80vh; } }
+    section.default .page_wrapper_inner .photo_wrapper {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 50%; }
+    section.default .page_wrapper_inner .text_wrapper {
+      width: calc(50% - 40px);
+      padding: 30px 20px;
+      overflow-y: auto;
+      font-size: 18px; }
+      @media (min-width: 1440px) {
+        section.default .page_wrapper_inner .text_wrapper {
+          font-size: 20px; } }
+    section.default .page_wrapper_inner #map {
+      width: 50%; }
+
+.hamburger.is-active .hamburger-inner {
+  background-color: black; }
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: black; }
+  .hamburger.is-active .hamburger-inner::before {
+    background-color: black; }
+.hamburger .hamburger-inner {
+  background-color: white; }
+  .hamburger .hamburger-inner::after {
+    background-color: white; }
+  .hamburger .hamburger-inner::before {
+    background-color: white; }
+
+.mainpage .hamburger.is-active .hamburger-inner {
+  background-color: black !important; }
+  .mainpage .hamburger.is-active .hamburger-inner::after {
+    background-color: black !important; }
+  .mainpage .hamburger.is-active .hamburger-inner::before {
+    background-color: black !important; }
+.mainpage .hamburger .hamburger-inner {
+  background-color: white !important; }
+  .mainpage .hamburger .hamburger-inner::after {
+    background-color: white !important; }
+  .mainpage .hamburger .hamburger-inner::before {
+    background-color: white !important; }
+.mainpage .mainpage-wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+  .mainpage .mainpage-wrapper h2 {
+    width: 80%;
+    margin: 25vh auto 0vh;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white; }
+  .mainpage .mainpage-wrapper h1 {
+    width: 30%;
+    margin: 10vh auto; }
+    .mainpage .mainpage-wrapper h1 a img {
+      width: 100%; }
+.mainpage video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+  background-size: cover;
+  transition: 1s opacity; }
+  @media screen and (max-width: 500px) {
+    .mainpage video div {
+      width: 70%; } }
+  @media screen and (max-device-width: 800px) {
+    .mainpage video html {
+      background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+    .mainpage video #bgvid {
+      display: none; } }
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  height: calc(100vh - 132px);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0; }
+  .container .page-box {
+    display: flex; }
+    .container .page-box .photo {
+      width: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+      .container .page-box .photo img {
+        width: 100%; }
+    .container .page-box .text {
+      width: 50%;
+      padding: 50px 20px;
+      width: calc(50% - 40px);
+      color: white;
+      font-size: 16px;
+      line-height: 22px; }
+      .container .page-box .text h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 32px; }
+
+/*# sourceMappingURL=style.css.map */

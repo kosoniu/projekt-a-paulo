@@ -1,0 +1,28 @@
+
+  .hamburger{
+
+    &.is-active {
+      .hamburger-inner {
+        background-color: black;
+
+        &::after {
+          background-color: black;
+        }
+
+        &::before {
+          background-color: black;
+        }
+      }
+    }
+    .hamburger-inner {
+      background-color: white;
+
+      &::after {
+        background-color: white;
+      }
+
+      &::before {
+        background-color: white;
+      }
+    }
+  }
